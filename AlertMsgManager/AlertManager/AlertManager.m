@@ -111,7 +111,7 @@
                              handler:^(UIAlertAction * action)
                              {
                                  NSLog(@"OK pressed, %d", _status);
-                                 [self toggleStatus:true];
+                                 [self toggleStatus:false];
                              }];
     
     
@@ -137,7 +137,7 @@
     UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleDefault
                                                    handler:^(UIAlertAction * action) {
                                                        NSLog(@"OK pressed, %d", _status);
-                                                       [self toggleStatus:true];
+                                                       [self toggleStatus:false];
                                                        [alert dismissViewControllerAnimated:YES completion:nil];
                                                    }];
     
